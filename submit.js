@@ -20,13 +20,11 @@ function PALINDROME() {
         // This if statement will only executes if the string variable is empty when the form if being submitted.
         if (string == "") {
             result = "Give an input";
-            Sound();
             break;
         }
         // I then added an else if statement which will execute if the replacePal variable is not equal to the joinPal variable.
         else if (replacePal !== joinPal) {
             result = "The word, phrase or sequence written above is not a palindrome.";
-            stopSound();
             break;
         }
         // I ended the else if statement with an else statement which executes if the else if condition is not true.
@@ -34,7 +32,6 @@ function PALINDROME() {
             result = "The word, phrase or sequence written above is a palindrome.";
             // This will call the playSound() function and play a sound if the word/phrase written is a palindrome.
             playSound();
-            audio.pause();
             // This will change the message on the play sound button.
             document.getElementById("playbtn").innerHTML = "Well done!";
             break;
@@ -48,8 +45,6 @@ function PALINDROME() {
 // I created a sound variable to use in my playSound() and stopSound() functions.
 var sound;
 
-var audio;
-
 // The playSound() function plays an audio file in my webpage using the sound variable.
 function playSound() {
     document.getElementById("playbtn").disabled = true; // Disables the start button
@@ -60,7 +55,6 @@ function playSound() {
     sound = document.getElementById("sound");
     // Then I will assign the play function to my sound variable.    
     sound.play();
-    audio.pause();
     // And lastly, the message on the play button will change when clicked.
     document.getElementById("playbtn").innerHTML = "Audio is Playing";
 }
@@ -76,12 +70,6 @@ function stopSound() {
     document.getElementById("audio");
     // I assigned the pause function to my sound variable which pauses the sound when the stop button is clicked.
     sound.pause();
-    audio.pause();
     // This will change back the message on the play button.
     document.getElementById("playbtn").innerHTML = "Click to hear an applause";
-}
-
-function Sound() {
-    audio = document.getElementById("audio");
-    audio.play();
 }
