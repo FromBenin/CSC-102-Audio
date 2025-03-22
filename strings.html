@@ -1,0 +1,55 @@
+<!-- 
+ Name: Nosa Erhabor
+ Date: - March 2025
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<!-- My html Header. -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Checker</title>
+    <!-- Including my JavaScript file. -->
+    <script src="submit.js"></script>
+    <!-- Including my style sheets file. -->
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <h1>PALINDROME CHECKER</h1>
+
+    <p id="paragraph">A palindrome is a word, phrase, or any sequence of characters that is spelled the the same forward and backward (ignoring white-spaces, punctuation, and capitalization).</p>
+    <br>
+
+    <!-- The tag I included below is a form tag which is created to accept user input from a webpage. -->
+    <form name="Palindrome" onsubmit="return false">
+
+        <!-- I added an input, which creates the place where the user can place an input, whether it a word or a sequence of characeters, on a webpage. -->
+        <p id="phrase">Words/Phrase: <input type="text" size="65" id="string" name="String" placeholder="Enter any word, phrase or sequence of characters of your choice"></p>
+        <br>
+
+        <!-- I made a paragraph tag and gave it an id so that the result of the palindrome checker can be displayed. -->
+        <p id="result"></p>
+        <br>
+
+        <!-- I added another input tag for the submit buuton. Input tags can also be used to create a button for submitting or reseting the form input. -->
+        <p><input type="submit" onclick="PALINDROME()" value="Submit"></p>
+    </form>
+    <br>
+    <!-- I made a play button to the webpage which plays the audio file when clicked. -->
+    <p><button id="playbtn" onclick="playSound()">Click to hear an applause</button></p>
+    <br>
+    <!-- I then made a stop button which pauses/stops playing the sound. -->
+    <p><button id="stopbtn" onclick="stopSound()">Click to stop applause</button></p>
+    <!-- I added an audio tag to connect my audio file to my webpage. -->
+    <!-- I got my sound effects from this website 'https://pixabay.com/sound-effects/' -->
+    <audio id="sound">
+        <source src="applause.mp3">
+    </audio>
+    <audio id="audio">
+        <source src="cricket.mp3">
+    </audio>
+    <audio controls>
+        <source src="trumpet.mp3">
+    </audio>
+</body>
+</html>

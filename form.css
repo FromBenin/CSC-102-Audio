@@ -1,0 +1,71 @@
+body {
+    background-image: url('tech.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fc1f1f;
+}
+
+p {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#paragraph {
+    color: #56b7f8;
+}
+
+#phrase {
+    font-weight: bold;
+    color: #219df0;
+}
+
+#result {
+    color: #cee02b;
+}
+
+input[type=text] {
+    border-radius: 10px;
+}
+
+input[type=submit] {
+    border-radius: 10px;
+    background-color: #7fff00;
+    font-family: 'Courier New', Courier, monospace;
+}
+input[type=submit]:hover {
+    background-color: #83dd28;
+    cursor: pointer;
+}
+
+button {
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#playbtn {
+    background-color: #7fffd4;
+    color: #fc1f1f;
+}
+#playbtn:hover {
+    background-color: #9af0d3;
+    color: #f54949;
+}
+
+#stopbtn {
+    background-color: #219df0;
+    color: #e5ff00;
+}
+#stopbtn:hover {
+    background-color: #56b7f8;
+    color: #cee02b;
+}
